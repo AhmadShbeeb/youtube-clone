@@ -4,9 +4,10 @@ import { ChannelDetail, Feed, Navbar, SearchFeed, VideoDetail } from './componen
 
 const App = () => (
   <BrowserRouter>
+    {/* <Box>: like a div */}
     <Box sx={{ backgroundColor: '#000' }}>
       <Navbar />
-      {/* routes to the FIRST matched path */}
+      {/* <Routes>: routes to the FIRST matched path */}
       <Routes>
         <Route path='/' exact element={<Feed />} />
         <Route path='/video/:id' exact element={<VideoDetail />} />
